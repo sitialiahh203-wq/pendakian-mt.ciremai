@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bukan Tentang Puncak, Tapi Tentang Perjalanan</title>
+
+  <style>
+    /* ======== Gaya Umum ======== */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #f4f1ea; /* krem alami */
+      color: #2c2c2c;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ======== Header ======== */
+    header {
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      z-index: 2;
+      animation: slideUp 2s ease-in-out;
+      letter-spacing: 1px;
+    }
+
+    /* ======== Section ======== */
+    section {
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 0 25px;
+      animation: fadeInUp 1.8s ease;
+    }
+
+    p {
+      margin: 20px 0;
+      text-align: justify;
+      color: #2f2f2f;
+      transition: all 0.4s ease;
+    }
+
+    p:hover {
+      transform: scale(1.01);
+      color: #2b4223; /* hijau lumut lembut */
+    }
+
+    .quote {
+      font-style: italic;
+      color: #3e4e36;
+      border-left: 4px solid #9c8f72;
+      background: #e9e4d4;
+      padding: 15px 20px;
+      margin: 30px 0;
+      border-radius: 5px;
+      animation: fadeIn 3s ease-in;
+    }
+
+    /* ======== Footer ======== */
+    footer {
+      text-align: center;
+      padding: 35px;
+      font-size: 0.9em;
+      color: #4b4b4b;
+      background-color: #e1dbce;
+      border-top: 1px solid #d1c7b8;
+      animation: fadeIn 2.5s ease;
+    }
+
+    footer span {
+      color: #6c775e;
+    }
+
+    /* ======== Animasi ======== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ======== Scroll Effect ======== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2em;
+        padding: 0 20px;
+      }
+      section {
+        margin: 30px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Bukan Tentang Puncak,<br>Tapi Tentang Perjalanan</h1>
+  </header>
+
+  <section>
+    <p class="fade-in">Namaku <strong>Siti Aliah</strong>, seorang gadis berumur 17 tahun yang mulai jatuh cinta pada alam sejak usia 16 tahun. Sejak saat itu, aku merasa ada sesuatu yang memanggil — bukan sekadar pemandangan hijau atau kabut di puncak gunung, melainkan rasa tenang yang hanya bisa kutemukan di antara angin, tanah, dan langit yang luas.</p>
+
+    <p class="fade-in">Perjalanan pertamaku adalah pendakian ke <strong>Gunung Ciremai via Palutungan</strong>. Hari itu menjadi titik awal kisahku dengan alam. Semuanya terasa begitu baru, seru, dan hangat — orang-orangnya ramah, suasananya akrab, dan aku merasa begitu nyaman meski berada jauh di atas bumi yang biasa kupijak. Namun, pendakian pertamaku tidak berakhir di puncak.</p>
+
+    <p class="fade-in">Saat summit attack, udara malam yang dingin menembus napasku. Oksigen terasa berat, dan dadaku seperti menolak setiap helaan udara dingin yang masuk. Aku berhenti berkali-kali, berjuang antara ingin lanjut dan harus berhenti. Nafasku tersengal, tapi hatiku masih ingin melangkah. Sayangnya, waktu tidak menungguku — puncak ditutup pukul 10.00 WIB, dan pada jam 09.00, jarakku masih jauh dari tujuan.</p>
+
+    <div class="quote fade-in">
+      Namun di tengah perjalanan yang berat itu, alam memberiku hadiah yang menenangkan.
+    </div>
+
+    <p class="fade-in">Dari jalur pendakian, aku disuguhkan pemandangan yang luar biasa — lautan awan, hamparan hijau yang luas, dan bunga edelweis yang bermekaran dengan anggun di sela-sela batu. Saat itu aku terdiam lama, memandangi keindahan yang terasa begitu dekat dengan langit. Dan entah mengapa, di sanalah aku merasa cukup. Itulah alasan mengapa aku yakin untuk mengakhiri perjalanan tersebut — bukan karena menyerah, tapi karena aku tahu, keindahan sejati tidak selalu berada di puncak.</p>
+
+    <p class="fade-in">Di Pos 8, aku akhirnya mengambil keputusan terberat — berhenti. Aku duduk di tepi jalur, memandangi langit yang perlahan memudar. Di sana aku belajar arti keikhlasan — bahwa tidak semua perjalanan harus sampai puncak untuk disebut berhasil. Kadang, berhenti juga bentuk keberanian.</p>
+
+    <p class="fade-in">Logistikku hampir habis, tubuh mulai lelah, udara semakin tipis. Aku duduk sendirian, berusaha berdamai dengan diriku sendiri, meyakinkan hati agar tak menyesali apa pun. Hingga tiba-tiba, seseorang datang — seorang pria yang tak kukenal, menanyakan keadaanku dengan nada khawatir. Di tangannya, hanya ada setengah botol air. Namun tanpa pikir panjang, ia memberikannya padaku.</p>
+
+    <p class="fade-in">Aku menatapnya — tidak tahu siapa dia, dari mana asalnya, atau kemana ia akan melangkah setelah ini. Tapi sejak hari itu, aku percaya bahwa kebaikan bisa hadir bahkan di udara yang setipis puncak gunung. Mungkin Tuhan mengirimnya hanya untuk mengingatkanku: bahwa perjalanan bukan tentang sampai, melainkan tentang bagaimana kita menjalani setiap langkah dengan hati yang tulus.</p>
+
+    <p class="fade-in">Sejak saat itu, aku jatuh cinta bukan hanya pada alam — tapi juga pada segala pelajaran yang diselipkannya di balik dinginnya udara dan sunyinya hutan.</p>
+
+    <div class="quote fade-in">
+      Karena bagiku, puncak bukanlah tempat tertinggi,<br>
+      melainkan saat kita bisa berdamai dengan diri sendiri dan berterima kasih atas setiap napas yang masih bisa kita hirup.
+    </div>
+  </section>
+
+  <footer>
+    © 2025 <span>Siti Aliah</span> | Bukan Tentang Puncak, Tapi Tentang Perjalanan 🌿
+  </footer>
+
+  <script>
+    // Animasi muncul saat di-scroll
+    const fadeEls = document.querySelectorAll('.fade-in');
+    function checkVisibility() {
+      fadeEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('load', checkVisibility);
+  </script>
+</body>
+</html>
